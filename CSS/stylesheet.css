@@ -396,12 +396,35 @@ footer {
     padding: 20px;
     color: var(--section-title-color);
 }
+footer .container {
+    display: flex;
+    justify-content: space-between;
+}
 footer p {
     width: fit-content;
-    margin: auto;
 }
 footer a {
     font-weight: bolder;
     color: var(--main-color);
+}
+footer img {
+    position: relative;
+    top: 6px;
+}
+footer i {
+    margin-left: 20px;
+    color: white;
+}
+footer i:hover {
+    color: var(--main-color);
+}
+@media (max-width:767px) {
+    footer .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    footer .links {
+        margin-top: 25px;
+    }
 }
 /* End footer */
